@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<body bgcolor=""springgreen">
+<div>
+<h1>Movies List</h1>
+<table border="1" align="center">
+<tr><th>movieId</th><th>movieName</th><th>movieCollection</th></tr>
+<tr th:each="n: ${movieslist}">
+  <td th:text ="${n.movieId}"></td>
+  <td th:text ="${n.movieName}"></td>
+  <td th:text ="${n.movieCollection}"></td>
+</tr>
+</table>
+</div>
+<br>
+<a href="index.html">home</a>
+</body>
+</head>
+</html>

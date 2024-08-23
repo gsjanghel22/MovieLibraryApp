@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+h2{
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+div{
+margin-top:10%;
+margin-left:auto;
+margin-right:auto;
+width: 450px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;}
+table{
+margin-left:10px;
+text-align:center;}
+</style>
+</head>
+
+<body>
+<h2>Movie Details</h2>
+<div>
+
+<table>
+<tr><th>MovieId</th><th>MovieName</th><th>MovieCollection</th></tr>
+<tr th:each="emp: ${list}">
+	
+	<td th:text="${emp.movieId}"></td>
+	<td th:text="${emp.movieName}"></td> 
+	<td th:text="${emp.movieCollection}"></td>
+</tr>
+</table>
+
+
+</div>
+
+<br>
+<a href="index.html">home</a>
+
+</body>
+</html>

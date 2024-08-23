@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Login</title>
+<style>
+body {background:gray;}
+.main {
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+h1{
+text-align:center;
+}
+table{
+margin-top:10%;
+margin-left:auto;
+margin-right:auto;
+}
+.addbutton{
+margin-top:15px;
+padding:3px;
+background:blue;
+border-color:blue;
+border-radius:5px;
+text-align:center;
+cursor:pointer;
+box-shadow:1px 1px 2px blue;
+}
+.addbutton:hover{
+color:white;
+background-color:purple;}
+</style>
+</head>
+<body>
+<h1>LOGIN WITH YOU INFO.</h1>
+<div class="main">
+<form name="add" action="/add" method="post">
+<table>
+<tr><th colspan="2">LOGIN</th></tr>
+<tr><td>Enter Movie Id : </td ><td><input type="text" name="movieId" placeholder="Movie ID" required/></td></tr>
+<tr><td>Enter Movie Name : </td><td><input type="text" name="movieName" placeholder="Movie Name" required/></td></tr>
+<tr><td>Enter Movie Collection : </td><td><input type="text" name="movieCollection" placeholder="Movie Collection" required/></td></tr>
+
+<tr><td colspan="2"><input type="submit" name="add" value="ADD" class="addbutton"></td></tr> 
+</table>
+</form>
+</div>
+<br>
+<a href="index.html">home</a>
+</body>
+</html>
